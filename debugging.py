@@ -25,14 +25,29 @@
 # except IndexError:
 #     print("Index not found.")
 
-#step 4
-prices = {
-    "apple": 3,
-    "banana": 5
-}
+# #step 4
+# prices = {
+#     "apple": 3,
+#     "banana": 5
+# }
 
-item = input("Enter item: ")
+# item = input("Enter item: ")
+# try:
+#     print(prices[item])
+# except KeyError:
+#     print ("Item not found")
+
+#step 5
+numbers = [100, 200, 300]
 try:
-    print(prices[item])
-except KeyError:
-    print ("Item not found")
+    index = int(input("Choose index: "))
+    divider = int(input("Choose divider: "))
+
+    result = numbers[index] / divider
+    print(result)
+except ZeroDivisionError:
+    print("Error - Cannot divide by 0")
+except ValueError:
+    print("Error - Enter a number.")
+except IndexError:
+    print("Error - Index does not exist")
