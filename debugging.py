@@ -137,8 +137,24 @@
 
 
 ## Extra 2. First Letter
-try:
-    word = input("Enter word: ")
-    print(word[0])
-except IndexError:
-    print("Word is empty")
+# try:
+#     word = input("Enter word: ")
+#     print(word[0])
+# except IndexError:
+#     print("Word is empty")
+
+# Extra 3. Average Score
+scores = [90, 80, 100]
+total = 0
+
+for score in scores:
+    total += score
+print(f"Current score: {score}, Total so far: {total}")
+
+average = total / len(scores)
+print(average)
+
+
+#33.333333333333336
+#90
+#Calculates only the last value - overwrites the first ones
