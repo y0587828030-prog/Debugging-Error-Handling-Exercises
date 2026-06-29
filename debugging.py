@@ -37,17 +37,27 @@
 # except KeyError:
 #     print ("Item not found")
 
-#step 5
-numbers = [100, 200, 300]
-try:
-    index = int(input("Choose index: "))
-    divider = int(input("Choose divider: "))
+# #step 5
+# numbers = [100, 200, 300]
+# try:
+#     index = int(input("Choose index: "))
+#     divider = int(input("Choose divider: "))
 
-    result = numbers[index] / divider
-    print(result)
-except ZeroDivisionError:
-    print("Error - Cannot divide by 0")
+#     result = numbers[index] / divider
+#     print(result)
+# except ZeroDivisionError:
+#     print("Error - Cannot divide by 0")
+# except ValueError:
+#     print("Error - Enter a number.")
+# except IndexError:
+#     print("Error - Index does not exist")
+
+#step 6
+try:
+    score = int(input("Enter score: "))
+
+    print("Your score is", score)
 except ValueError:
-    print("Error - Enter a number.")
-except IndexError:
-    print("Error - Index does not exist")
+     print("Invalid score")
+finally:
+    print("Check finished")
