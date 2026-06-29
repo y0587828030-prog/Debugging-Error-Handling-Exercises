@@ -68,18 +68,19 @@
 # else:
 #     print("Welcome user")
 
-price = 100
-discount = 20
+# price = 100
+# discount = 20
 
-discount_amount = price * (discount / 100)
-print("Discount amount", discount_amount)
+# discount_amount = price * (discount / 100)
+# print("discount amount", discount_amount)
 
-final_price = price - discount_amount
-print(final_price)
+# final_price = price - discount_amount
+# print(final_price)
 
 
 ## 99.8
 ## 80
+## Logical Error
 
 #אופציה ב בלי פרינט נוסף
 # (#step 8
@@ -89,5 +90,19 @@ print(final_price)
 # x = price/100
 # final_price = 100 - x *20
 # print(final_price)
+
+#step 9
+password = "abc123"
+guess = input("Enter password: ")
+print(f"examination: '{guess}' The correct password: '{password}'")
+
+if guess == password:
+    print("Login successful")
+else:
+    print("Wrong password")
+
+##Logical Error - The password is correct and prints an error, and vice versa.
+
+
 
 
