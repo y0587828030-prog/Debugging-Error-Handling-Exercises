@@ -17,10 +17,22 @@
 # except ZeroDivisionError:
 #     print("Cannot divide by zero.")
 
-#step 3
-numbers = [10, 20, 30]
-index = int(input("Choose index: "))
+# #step 3
+# numbers = [10, 20, 30]
+# index = int(input("Choose index: "))
+# try:
+#     print(numbers[index])
+# except IndexError:
+#     print("Index not found.")
+
+#step 4
+prices = {
+    "apple": 3,
+    "banana": 5
+}
+
+item = input("Enter item: ")
 try:
-    print(numbers[index])
-except IndexError:
-    print("Index not found.")
+    print(prices[item])
+except KeyError:
+    print ("Item not found")
