@@ -127,10 +127,18 @@
 # #ZeroDivisionError
 
 
-# 10 Extra Exercises
-celsius = input("Celsius: ")
+# # 10 Extra Exercises
+# celsius = input("Celsius: ")
+# try:
+#     fahrenheit = int(celsius) * 9 / 5 + 32
+#     print(fahrenheit)
+# except ValueError:
+#     print("Only a number must be entered.")
+
+
+## Extra 2. First Letter
 try:
-    fahrenheit = int(celsius) * 9 / 5 + 32
-    print(fahrenheit)
-except ValueError:
-    print("Only a number must be entered.")
+    word = input("Enter word: ")
+    print(word[0])
+except IndexError:
+    print("Word is empty")
