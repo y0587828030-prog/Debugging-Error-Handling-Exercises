@@ -103,6 +103,26 @@ else:
 
 ##Logical Error - The password is correct and prints an error, and vice versa.
 
+#step 10
+try:
+    num1 = int(input("Number 1: "))
+    op = input("Operator: ")
+    num2 = int(input("Number 2: "))
 
-
+    if op == "+":
+          print(num1 + num2)
+    elif op == "-":
+         print(num1 - num2)
+    elif op == "*":
+        print(num1 * num2)
+    elif op == "/":
+         print(num1 / num2)
+except ValueError:
+    print("Age must be a number.")
+except ZeroDivisionError:
+     print("Cannot divide by zero.")
+finally:
+    print("Calculator closed.")
+#ValueError
+#ZeroDivisionError
 
