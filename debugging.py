@@ -55,9 +55,15 @@
 #step 6
 try:
     score = int(input("Enter score: "))
-
     print("Your score is", score)
 except ValueError:
      print("Invalid score")
 finally:
     print("Check finished")
+
+#step 7
+name = input("Enter your name: ")
+if name == "admin": #Syntax error - missing colon
+    print("Welcome admin")
+else:
+    print("Welcome user")
