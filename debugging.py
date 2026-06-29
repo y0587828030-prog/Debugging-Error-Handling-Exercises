@@ -91,38 +91,46 @@
 # final_price = 100 - x *20
 # print(final_price)
 
-#step 9
-password = "abc123"
-guess = input("Enter password: ")
-print(f"examination: '{guess}' The correct password: '{password}'")
+# #step 9
+# password = "abc123"
+# guess = input("Enter password: ")
+# print(f"examination: '{guess}' The correct password: '{password}'")
 
-if guess == password:
-    print("Login successful")
-else:
-    print("Wrong password")
+# if guess == password:
+#     print("Login successful")
+# else:
+#     print("Wrong password")
 
 ##Logical Error - The password is correct and prints an error, and vice versa.
 
-#step 10
+# #step 10
+# try:
+#     num1 = int(input("Number 1: "))
+#     op = input("Operator: ")
+#     num2 = int(input("Number 2: "))
+
+#     if op == "+":
+#           print(num1 + num2)
+#     elif op == "-":
+#          print(num1 - num2)
+#     elif op == "*":
+#         print(num1 * num2)
+#     elif op == "/":
+#          print(num1 / num2)
+# except ValueError:
+#     print("Age must be a number.")
+# except ZeroDivisionError:
+#      print("Cannot divide by zero.")
+# finally:
+#     print("Calculator closed.")
+# #ValueError
+# #ZeroDivisionError
+
+
+# 10 Extra Exercises
+celsius = input("Celsius: ")
 try:
-    num1 = int(input("Number 1: "))
-    op = input("Operator: ")
-    num2 = int(input("Number 2: "))
-
-    if op == "+":
-          print(num1 + num2)
-    elif op == "-":
-         print(num1 - num2)
-    elif op == "*":
-        print(num1 * num2)
-    elif op == "/":
-         print(num1 / num2)
+    fahrenheit = int(celsius) * 9 / 5 + 32
+    print(fahrenheit)
 except ValueError:
-    print("Age must be a number.")
-except ZeroDivisionError:
-     print("Cannot divide by zero.")
-finally:
-    print("Calculator closed.")
-#ValueError
-#ZeroDivisionError
-
+    print("Only a number must be entered.")
