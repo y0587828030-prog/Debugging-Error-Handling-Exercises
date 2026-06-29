@@ -52,18 +52,42 @@
 # except IndexError:
 #     print("Error - Index does not exist")
 
-#step 6
-try:
-    score = int(input("Enter score: "))
-    print("Your score is", score)
-except ValueError:
-     print("Invalid score")
-finally:
-    print("Check finished")
+# #step 6
+# try:
+#     score = int(input("Enter score: "))
+#     print("Your score is", score)
+# except ValueError:
+#      print("Invalid score")
+# finally:
+#     print("Check finished")
 
-#step 7
-name = input("Enter your name: ")
-if name == "admin": #Syntax error - missing colon
-    print("Welcome admin")
-else:
-    print("Welcome user")
+# #step 7
+# name = input("Enter your name: ")
+# if name == "admin": #Syntax error - missing colon
+#     print("Welcome admin")
+# else:
+#     print("Welcome user")
+
+price = 100
+discount = 20
+
+discount_amount = price * (discount / 100)
+print("Discount amount", discount_amount)
+
+final_price = price - discount_amount
+print(final_price)
+
+
+## 99.8
+## 80
+
+#אופציה ב בלי פרינט נוסף
+# (#step 8
+# price = 100
+# discount = 20
+
+# x = price/100
+# final_price = 100 - x *20
+# print(final_price)
+
+
